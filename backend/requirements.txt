@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+PyJWT
+python-multipart
+httpx
+python-dotenv
+weaviate-client
+sentence-transformers
+numpy 
