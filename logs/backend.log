@@ -1,0 +1,44 @@
+INFO:     Will watch for changes in these directories: ['/Users/xuanyezeng/Desktop/AI-Course/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [64365] using WatchFiles
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/aggregate.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/base.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/base_search.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/batch_delete.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/batch.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/search_get.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/generative.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/properties.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+/Users/xuanyezeng/miniconda3/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.29.0 is exactly one major version older than the runtime version 6.31.1 at v1/tenants.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+INFO:     Started server process [64370]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Starting AI Course Recommender API...
+INFO:     127.0.0.1:50622 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50633 - "GET /api/admin/vector-db/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50634 - "GET /health HTTP/1.1" 200 OK
+/Users/xuanyezeng/Desktop/AI-Course/backend/app/routers/auth.py:19: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  expire = datetime.utcnow() + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+INFO:     127.0.0.1:0 - "POST /api/auth/login?username=demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/recommendations/1/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/feedback/preferences HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/recommendations/1/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/recommendations/1?max_results=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/courses/?limit=12&offset=0 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [64370]
+INFO:     Stopping reloader process [64365]
+/Users/xuanyezeng/miniconda3/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-64370-fslmr9ne'}
+  warnings.warn(
