@@ -2,10 +2,10 @@
 
 A comprehensive AI-powered course recommendation system that learns from user feedback to provide personalized course suggestions. Built with React, FastAPI, Llama 3.2 1B, and enhanced with **Weaviate vector database** for semantic similarity search.
 
-## 🚀 Features
+## Features
 
 - **Personalized Recommendations**: AI-powered course suggestions based on user preferences and feedback
-- **🧠 Vector Similarity Search**: Semantic course matching using AI embeddings 
+- * Vector Similarity Search**: Semantic course matching using AI embeddings 
 - **Intelligent Learning**: System learns from user interactions and improves recommendations over time
 - **Modern UI**: Clean, responsive React interface with Material-UI components
 - **Real-time Feedback**: Immediate feedback processing and preference updates
@@ -13,7 +13,7 @@ A comprehensive AI-powered course recommendation system that learns from user fe
 - **AI Reasoning Display**: Formatted explanations for why courses were recommended
 - **Comprehensive Analytics**: User learning patterns and progress tracking
 
-## 🏗️ Enhanced Architecture
+## Enhanced Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -39,7 +39,7 @@ A comprehensive AI-powered course recommendation system that learns from user fe
 5. **Response Delivery** → Formatted recommendations with similarity scores and AI reasoning
 6. **Memory Update** → New feedback stored in both databases for future learning
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 - **FastAPI**: High-performance Python web framework
@@ -57,7 +57,7 @@ A comprehensive AI-powered course recommendation system that learns from user fe
 - **React Query**: Server state management and caching
 - **Axios**: HTTP client for API communication
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Node.js 16+
@@ -65,7 +65,7 @@ A comprehensive AI-powered course recommendation system that learns from user fe
 - **Docker** (for Weaviate vector database)
 - Git
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Ollama and Llama 3.2 1B
 
@@ -129,7 +129,7 @@ cd backend && python migrate_to_weaviate.py
 - **API Documentation**: http://localhost:8000/docs
 - **Weaviate Console**: http://localhost:8080/v1/schema (when running)
 
-## 🔑 Demo Access
+## Demo Access
 
 Use the following credentials to try the application:
 - **Username**: `demo_user`
@@ -137,7 +137,7 @@ Use the following credentials to try the application:
 
 The demo user comes with sample preferences and feedback data to showcase the recommendation system.
 
-## 🧠 Enhanced AI Features
+## AI Features
 
 ### Vector Similarity Search
 - **Semantic Matching**: Finds courses based on meaning, not just keywords
@@ -151,7 +151,7 @@ The demo user comes with sample preferences and feedback data to showcase the re
 - **Negative Preference Handling**: Filters out courses with disliked topics
 - **Collaborative Filtering**: Finds users with similar preferences (when Weaviate is running)
 
-## 📊 Key Endpoints
+## Key Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -178,7 +178,7 @@ The demo user comes with sample preferences and feedback data to showcase the re
 - `GET /api/courses/{course_id}` - Get specific course
 - `POST /api/courses/search` - Search courses
 
-## 🎯 Sample Queries and Expected Results
+## Sample Queries and Expected Results
 
 ### 1. Semantic Search
 **Query**: "I want to learn machine learning with hands-on projects for beginners"
@@ -230,9 +230,9 @@ AI-Course/
 └── README.md             # This file
 ```
 
-## 🚧 Current Implementation Status
+## Current Implementation Status
 
-### ✅ Completed
+### Completed
 - [x] FastAPI backend with core endpoints
 - [x] React frontend with authentication
 - [x] SQLite database with sample data
@@ -253,7 +253,7 @@ AI-Course/
 - [x] **Negative preference filtering**
 - [x] **Collaborative filtering capabilities**
 
-## 🧪 Testing
+## Testing
 
 ### Test Recommendations
 ```bash
@@ -299,7 +299,7 @@ EMBEDDING_MODEL=all-MiniLM-L6-v2
 CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
 ```
 
-## 🚀 Running with Vector Database
+## Running with Vector Database
 
 ### Option 1: Automated Setup
 ```bash
@@ -319,7 +319,7 @@ cd backend && python migrate_to_weaviate.py
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-## 🎉 What's New with Vector Integration
+## What's New with Vector Integration
 
 ### Enhanced User Experience
 - **Smarter Search**: "Find courses like 'practical machine learning'" works semantically
@@ -338,7 +338,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 - **Enhanced Analytics**: Vector similarity scores and distance metrics
 - **Future-Ready**: Foundation for advanced AI features like RAG
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Weaviate** for the powerful vector database
 - **Sentence Transformers** for excellent embedding models
@@ -346,8 +346,3 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 - **Meta** for the Llama 3.2 model
 - **Material-UI** for the beautiful React components
 - **FastAPI** for the excellent Python web framework
-
----
-
-**Built for personalized learning experiences**  
-**Includes a vector database (Weaviate) for semantic search.** 
