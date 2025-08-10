@@ -5,7 +5,7 @@ A comprehensive AI-powered course recommendation system that learns from user fe
 ## Features
 
 - **Personalized Recommendations**: AI-powered course suggestions based on user preferences and feedback
-- * Vector Similarity Search**: Semantic course matching using AI embeddings 
+- **Vector Similarity Search**: Semantic course matching using AI embeddings 
 - **Intelligent Learning**: System learns from user interactions and improves recommendations over time
 - **Modern UI**: Clean, responsive React interface with Material-UI components
 - **Real-time Feedback**: Immediate feedback processing and preference updates
@@ -198,7 +198,7 @@ The demo user comes with sample preferences and feedback data to showcase the re
 - **Negative Preference Learning**: Automatically excludes topics from poorly-rated courses
 - **AI Explanation**: Formatted reasoning with personalized insights
 
-## 📁 Enhanced Project Structure
+## Enhanced Project Structure
 
 ```
 AI-Course/
@@ -232,7 +232,6 @@ AI-Course/
 
 ## Current Implementation Status
 
-### Completed
 - [x] FastAPI backend with core endpoints
 - [x] React frontend with authentication
 - [x] SQLite database with sample data
@@ -246,7 +245,7 @@ AI-Course/
 - [x] User feedback system
 - [x] Real-time preference updates
 
-### 🔄 Available (when vector DB running)
+### Available (when vector DB running)
 - [x] **Vector similarity course search**
 - [x] **Semantic query understanding**
 - [x] **Enhanced personalization with embeddings**
@@ -273,7 +272,7 @@ python test_system.py
 curl -X POST "http://localhost:8000/api/recommendations/1/semantic-search?query=machine%20learning%20for%20beginners&max_results=5"
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 Create a `.env` file in the backend directory:
